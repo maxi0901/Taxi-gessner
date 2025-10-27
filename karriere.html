@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karriere bei Taxi Geßner UG in Homberg (Efze): Jetzt als Taxifahrer*in oder Disponent*in bewerben." />
+  <title>Karriere | Taxi Geßner UG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html">
+        <img src="https://img.icons8.com/fluency/48/taxi.png" alt="Taxi-Icon" width="40" height="40" loading="lazy" />
+        <span>Taxi Geßner UG<br><small>Homberg (Efze)</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu">
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="karriere.html" aria-current="page">Karriere</a></li>
+        <li><a href="geschichte.html">Geschichte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 4.5rem 1.5rem; background-image: linear-gradient(120deg, rgba(46, 46, 46, 0.85), rgba(46, 46, 46, 0.6)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-content">
+        <div>
+          <h1>Karriere bei Taxi Geßner UG</h1>
+          <p>Wir wachsen weiter und suchen engagierte Kolleginnen und Kollegen, die gemeinsam mit uns die Mobilität in Homberg (Efze) gestalten.</p>
+          <a class="button" href="#bewerben">Jetzt bewerben</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bewerben">
+      <div class="section-header">
+        <span class="badge">Offene Stellen</span>
+        <h2>Aktuelle Jobangebote</h2>
+        <p>Ob Vollzeit, Teilzeit oder Minijob – wir bieten flexible Arbeitszeiten und faire Konditionen.</p>
+      </div>
+      <div class="grid grid-cols-2">
+        <article class="card">
+          <h3>Taxifahrer*in (m/w/d)</h3>
+          <p>Sie fahren Fahrgäste sicher und freundlich an ihr Ziel, betreuen Krankenfahrten und übernehmen Flughafentransfers.</p>
+          <ul>
+            <li>Führerschein Klasse B &amp; Personenbeförderungsschein</li>
+            <li>Flexible Schichten (Tag/Nacht)</li>
+            <li>Festanstellung oder Minijob</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Disponent*in (m/w/d)</h3>
+          <p>Sie koordinieren Fahrten, planen Schichten und sind erste Anlaufstelle für unsere Kundschaft.</p>
+          <ul>
+            <li>Organisationstalent &amp; Kommunikationsstärke</li>
+            <li>EDV-Kenntnisse (Dispatch-Systeme)</li>
+            <li>Arbeitsort: Homberg (Efze)</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="section-header">
+        <span class="badge">Ihre Vorteile</span>
+        <h2>Warum Taxi Geßner?</h2>
+        <p>Wir investieren in moderne Fahrzeuge, Schulungen und eine familiäre Unternehmenskultur.</p>
+      </div>
+      <div class="grid grid-cols-3">
+        <article class="card">
+          <h3>Faire Vergütung</h3>
+          <p>Überdurchschnittliche Bezahlung plus Zuschläge für Nacht- und Wochenendschichten.</p>
+        </article>
+        <article class="card">
+          <h3>Weiterbildung</h3>
+          <p>Schulungen für Krankenfahrten, Service-Trainings und Erste-Hilfe-Auffrischungen.</p>
+        </article>
+        <article class="card">
+          <h3>Teamkultur</h3>
+          <p>Regelmäßige Team-Events, kurze Entscheidungswege und Unterstützung im Alltag.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="bewerbungsformular">
+      <div class="section-header">
+        <span class="badge">Schnellbewerbung</span>
+        <h2 id="bewerbungsformular">Jetzt Formular ausfüllen</h2>
+        <p>Hinterlassen Sie uns Ihre Kontaktdaten und wir melden uns innerhalb von 24 Stunden.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="form" role="form">
+          <form id="career-form" method="post" action="php/contact.php">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required />
+
+            <label for="telefon">Telefon*</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer" required />
+
+            <label for="nachricht">Nachricht*</label>
+            <textarea id="nachricht" name="nachricht" placeholder="Für welche Position interessieren Sie sich?" required></textarea>
+
+            <button class="button" type="submit">Bewerbung senden</button>
+          </form>
+        </div>
+        <div class="contact-details">
+          <h3>Fragen? Wir helfen gerne!</h3>
+          <p>Telefonisch erreichen Sie uns jederzeit unter <strong>05681 / 2790</strong> oder per E-Mail an <a href="mailto:jobs@taxi-gessner.de">jobs@taxi-gessner.de</a>.</p>
+          <p>Sie können Ihre Bewerbungsunterlagen auch direkt an <strong>Ziegenhainer Straße 15, 34576 Homberg (Efze)</strong> senden.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Taxi Geßner UG</h3>
+        <p>Ziegenhainer Straße 15<br>34576 Homberg (Efze)</p>
+        <p>Telefon: <a href="tel:+4956812790">05681 / 2790</a><br>E-Mail: <a href="mailto:info@taxi-gessner.de">info@taxi-gessner.de</a></p>
+      </div>
+      <div>
+        <h4>Schnellzugriff</h4>
+        <ul>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="karriere.html">Karriere</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="index.html#leistungen">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year></span> Taxi Geßner UG – Alle Rechte vorbehalten.</div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
