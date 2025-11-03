@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kontakt zu Taxi Geßner UG in Homberg (Efze): Telefon, E-Mail, Öffnungszeiten und Kontaktformular." />
+  <title>Kontakt | Taxi Geßner UG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Hauptnavigation">
+      <a class="logo" href="index.html">
+        <img src="https://img.icons8.com/fluency/48/taxi.png" alt="Taxi-Icon" width="40" height="40" loading="lazy" />
+        <span>Taxi Geßner UG<br><small>Homberg (Efze)</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu">
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="karriere.html">Karriere</a></li>
+        <li><a href="geschichte.html">Geschichte</a></li>
+        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 4rem 1.5rem; background-image: linear-gradient(120deg, rgba(46, 46, 46, 0.85), rgba(46, 46, 46, 0.6)), url('https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-content">
+        <div>
+          <h1>Kontakt &amp; Anfahrt</h1>
+          <p>Wir sind 24/7 erreichbar. Rufen Sie an, schreiben Sie uns oder besuchen Sie uns direkt am Standort.</p>
+          <a class="button" href="tel:+4956812790">Direkt anrufen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="kontaktinfos">
+      <div class="section-header">
+        <span class="badge">Immer erreichbar</span>
+        <h2 id="kontaktinfos">So erreichen Sie uns</h2>
+        <p>Wir antworten in der Regel innerhalb weniger Minuten – telefonisch sogar sofort.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-details">
+          <h3>Taxi Geßner UG</h3>
+          <p>Ziegenhainer Straße 15<br>34576 Homberg (Efze)</p>
+          <p><strong>Telefon:</strong> <a href="tel:+4956812790">05681 / 2790</a><br>
+             <strong>E-Mail:</strong> <a href="mailto:info@taxi-gessner.de">info@taxi-gessner.de</a></p>
+          <p><strong>Öffnungszeiten:</strong><br>
+            Montag – Sonntag: 00:00 – 24:00 Uhr (durchgehend)</p>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=Homberg+Efze&zoom=14&size=600x300&markers=color:yellow%7CHomberg+Efze&key=YOUR_API_KEY" alt="Karte von Homberg (Efze)" loading="lazy" />
+        </div>
+        <div class="form" role="form" aria-labelledby="kontaktformular">
+          <h3 id="kontaktformular">Nachricht senden</h3>
+          <form method="post" action="php/contact.php">
+            <input type="hidden" name="form_type" value="contact" />
+            <label for="kontakt-name">Name*</label>
+            <input type="text" id="kontakt-name" name="name" placeholder="Ihr Name" required />
+
+            <label for="kontakt-telefon">Telefon*</label>
+            <input type="tel" id="kontakt-telefon" name="telefon" placeholder="Ihre Telefonnummer" required />
+
+            <label for="kontakt-email">E-Mail</label>
+            <input type="email" id="kontakt-email" name="email" placeholder="Ihre E-Mail-Adresse" />
+
+            <label for="kontakt-nachricht">Nachricht*</label>
+            <textarea id="kontakt-nachricht" name="nachricht" placeholder="Wie können wir helfen?" required></textarea>
+
+            <button class="button" type="submit">Nachricht senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Taxi Geßner UG</h3>
+        <p>Ziegenhainer Straße 15<br>34576 Homberg (Efze)</p>
+        <p>Telefon: <a href="tel:+4956812790">05681 / 2790</a><br>E-Mail: <a href="mailto:info@taxi-gessner.de">info@taxi-gessner.de</a></p>
+      </div>
+      <div>
+        <h4>Schnellzugriff</h4>
+        <ul>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="karriere.html">Karriere</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="index.html#leistungen">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year></span> Taxi Geßner UG – Alle Rechte vorbehalten.</div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
