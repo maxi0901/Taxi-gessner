@@ -3,19 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kontakt zu Taxi Geßner UG in Homberg (Efze): Telefon, E-Mail, Öffnungszeiten und Kontaktformular." />
-  <title>Kontakt | Taxi Geßner UG</title>
+  <meta name="description" content="Kontakt zu Taxi Geßner in Homberg (Efze): Adresse Mosenbergstraße 16a, Öffnungszeiten und direkte Ansprechpartner." />
+  <title>Kontakt | Taxi Geßner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "Taxi Geßner",
+    "url": "https://taxi-gessner24.de/kontakt",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mosenbergstraße 16a",
+      "addressLocality": "Homberg (Efze)",
+      "postalCode": "34576",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],"opens": "06:00","closes": "21:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Friday","Saturday"],"opens": "06:00","closes": "01:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": "Sunday","opens": "06:00","closes": "20:00"}
+    ],
+    "telephone": "+4956812790"
+  }
+  </script>
 </head>
 <body>
   <header>
     <nav class="navbar" aria-label="Hauptnavigation">
       <a class="logo" href="index.html">
         <img src="https://img.icons8.com/fluency/48/taxi.png" alt="Taxi-Icon" width="40" height="40" loading="lazy" />
-        <span>Taxi Geßner UG<br><small>Homberg (Efze)</small></span>
+        <span>Taxi Geßner<br><small>Homberg (Efze)</small></span>
       </a>
       <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false">
         <span></span>
@@ -37,7 +58,7 @@
       <div class="hero-content">
         <div>
           <h1>Kontakt &amp; Anfahrt</h1>
-          <p>Wir sind 24/7 erreichbar. Rufen Sie an, schreiben Sie uns oder besuchen Sie uns direkt am Standort.</p>
+          <p>Wir sind täglich ab 06:00 Uhr für Sie da – telefonisch, per Mail oder persönlich vor Ort.</p>
           <a class="button" href="tel:+4956812790">Direkt anrufen</a>
         </div>
       </div>
@@ -47,16 +68,27 @@
       <div class="section-header">
         <span class="badge">Immer erreichbar</span>
         <h2 id="kontaktinfos">So erreichen Sie uns</h2>
-        <p>Wir antworten in der Regel innerhalb weniger Minuten – telefonisch sogar sofort.</p>
+        <p>Wir antworten schnell – telefonisch oft direkt, per E-Mail innerhalb kurzer Zeit.</p>
       </div>
       <div class="contact-wrapper">
         <div class="contact-details">
-          <h3>Taxi Geßner UG</h3>
-          <p>Ziegenhainer Straße 15<br>34576 Homberg (Efze)</p>
+          <h3>Taxi Geßner</h3>
+          <address>
+            <strong>Taxi Geßner</strong><br>
+            Mosenbergstraße 16a<br>
+            34576 Homberg (Efze)<br>
+            Nicole Woicichowski-Böer (Inhaberin)
+          </address>
           <p><strong>Telefon:</strong> <a href="tel:+4956812790">05681 / 2790</a><br>
              <strong>E-Mail:</strong> <a href="mailto:info@taxi-gessner.de">info@taxi-gessner.de</a></p>
-          <p><strong>Öffnungszeiten:</strong><br>
-            Montag – Sonntag: 00:00 – 24:00 Uhr (durchgehend)</p>
+          <div>
+            <strong>Öffnungszeiten:</strong>
+            <ul class="opening-hours">
+              <li><strong>Montag–Donnerstag:</strong> 06:00 – 21:00</li>
+              <li><strong>Freitag–Samstag:</strong> 06:00 – 01:00</li>
+              <li><strong>Sonntag:</strong> 06:00 – 20:00</li>
+            </ul>
+          </div>
           <img src="https://maps.googleapis.com/maps/api/staticmap?center=Homberg+Efze&zoom=14&size=600x300&markers=color:yellow%7CHomberg+Efze&key=YOUR_API_KEY" alt="Karte von Homberg (Efze)" loading="lazy" />
         </div>
         <div class="form" role="form" aria-labelledby="kontaktformular">
@@ -86,7 +118,8 @@
     <div class="footer-content">
       <div>
         <h3>Taxi Geßner UG</h3>
-        <p>Ziegenhainer Straße 15<br>34576 Homberg (Efze)</p>
+        <p>Mosenbergstraße 16a<br>34576 Homberg (Efze)</p>
+        <p>Nicole Woicichowski-Böer (Inhaberin)</p>
         <p>Telefon: <a href="tel:+4956812790">05681 / 2790</a><br>E-Mail: <a href="mailto:info@taxi-gessner.de">info@taxi-gessner.de</a></p>
       </div>
       <div>
