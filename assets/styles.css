@@ -286,6 +286,39 @@ header {
   margin-bottom: 1rem;
 }
 
+.opening-hours {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.opening-hours li {
+  margin-bottom: 0.35rem;
+}
+
+.opening-hours li strong {
+  display: inline-block;
+  min-width: 11.5rem;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.team-note {
+  margin-top: 2rem;
+  font-style: italic;
+  color: rgba(46, 46, 46, 0.85);
+}
+
+.section-dark .team-note {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .footer {
   background-color: var(--dark);
   color: rgba(255, 255, 255, 0.85);
