@@ -85,15 +85,36 @@ header {
 .nav-toggle {
   display: none;
   flex-direction: column;
+  justify-content: center;
   gap: 0.35rem;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255, 216, 0, 0.5);
+  border-radius: 50%;
+  background-color: rgba(255, 216, 0, 0.15);
+  padding: 0.65rem;
   cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .nav-toggle span {
-  width: 26px;
+  width: 100%;
   height: 3px;
-  background-color: var(--light);
+  background-color: #FFD700;
   border-radius: 2px;
+  transition: transform 0.2s ease;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus {
+  background-color: rgba(255, 216, 0, 0.25);
+  border-color: rgba(255, 216, 0, 0.8);
+  transform: translateY(-1px);
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid rgba(255, 216, 0, 0.75);
+  outline-offset: 2px;
 }
 
 .hero {
@@ -346,6 +367,87 @@ blockquote {
   color: rgba(46, 46, 46, 0.9);
 }
 
+.section-dark blockquote {
+  color: #F5F5F5;
+}
+
+.testimonial-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.testimonial-form {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--light);
+  padding: 2.25rem;
+}
+
+.testimonial-form h3 {
+  margin-bottom: 1rem;
+}
+
+.testimonial-form label {
+  color: #F5F5F5;
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #FFFFFF;
+}
+
+.testimonial-form input::placeholder,
+.testimonial-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.testimonial-form input:focus,
+.testimonial-form textarea:focus {
+  box-shadow: 0 0 0 3px rgba(255, 216, 0, 0.35);
+}
+
+.testimonial-form textarea {
+  min-height: 140px;
+}
+
+.testimonial-submit {
+  width: 100%;
+}
+
+.testimonial-list {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.testimonial-list .card {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  padding: 2.25rem;
+}
+
+.testimonial-list .card p,
+.testimonial-list .card strong,
+.testimonial-list .card blockquote {
+  color: #F5F5F5;
+}
+
+.testimonial-list .card p {
+  margin-top: 1rem;
+}
+
+.testimonial-empty {
+  border: 1px dashed rgba(255, 216, 0, 0.5);
+  border-radius: 16px;
+  padding: 2.25rem;
+  color: #F5F5F5;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 @media (max-width: 900px) {
   .navbar .menu {
     position: absolute;
@@ -373,6 +475,10 @@ blockquote {
   .nav-toggle {
     display: flex;
   }
+
+  .testimonial-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
@@ -384,4 +490,3 @@ blockquote {
     padding: 3rem 1.25rem;
   }
 }
-

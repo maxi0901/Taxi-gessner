@@ -59,3 +59,48 @@ if (contactForm) {
     }
   });
 }
+
+const testimonialForm = document.querySelector('#testimonial-form');
+const testimonialList = document.querySelector('#testimonial-list');
+
+if (testimonialForm && testimonialList) {
+  testimonialForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const nameField = testimonialForm.querySelector('input[name="name"]');
+    const reviewField = testimonialForm.querySelector('textarea[name="review"]');
+    if (!nameField || !reviewField) {
+      return;
+    }
+
+    const name = nameField.value.trim();
+    const review = reviewField.value.trim();
+
+    if (!name || !review) {
+      return;
+    }
+
+    const emptyState = testimonialList.querySelector('.testimonial-empty');
+    if (emptyState) {
+      emptyState.remove();
+    }
+
+    const card = document.createElement('article');
+    card.className = 'card';
+
+    const quote = document.createElement('blockquote');
+    quote.textContent = `"${review}"`;
+
+    const author = document.createElement('p');
+    const strong = document.createElement('strong');
+    strong.textContent = name;
+    author.appendChild(strong);
+
+    card.appendChild(quote);
+    card.appendChild(author);
+    testimonialList.prepend(card);
+
+    testimonialForm.reset();
+    nameField.focus();
+  });
+}

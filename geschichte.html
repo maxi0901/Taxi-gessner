@@ -71,21 +71,25 @@
       <div class="section-header">
         <span class="badge">Stimmen</span>
         <h2>Was Kund*innen sagen</h2>
-        <p>Unsere Kundschaft begleitet uns seit vielen Jahren. Einige Eindrücke:</p>
+        <p>Teilen Sie Ihre Erfahrung mit Taxi Geßner – wir freuen uns über Ihr Feedback.</p>
       </div>
-      <div class="grid grid-cols-3">
-        <article class="card">
-          <blockquote>"Seit Jahren unser verlässlicher Partner für Krankenfahrten – immer pünktlich und fürsorglich."</blockquote>
-          <p><strong>Sabine H., Homberg</strong></p>
-        </article>
-        <article class="card">
-          <blockquote>"Für unsere Geschäftsreisen buchen wir ausschließlich Taxi Geßner – absolut professionell."</blockquote>
-          <p><strong>Michael S., Kassel</strong></p>
-        </article>
-        <article class="card">
-          <blockquote>"Das Team kennt jede Ecke der Stadt und hilft auch mal beim Einkaufstransport."</blockquote>
-          <p><strong>Kerstin L., Homberg</strong></p>
-        </article>
+      <div class="testimonial-wrapper">
+        <div class="form testimonial-form" role="form" aria-labelledby="testimonial-form-title">
+          <h3 id="testimonial-form-title">Ihre Bewertung</h3>
+          <form id="testimonial-form">
+            <label for="testimonial-name">Name*</label>
+            <input type="text" id="testimonial-name" name="name" placeholder="Ihr Name" required />
+
+            <label for="testimonial-text">Rezension*</label>
+            <textarea id="testimonial-text" name="review" placeholder="Wie war Ihre Fahrt mit Taxi Geßner?" required></textarea>
+
+            <button class="button testimonial-submit" type="submit">Bewertung senden</button>
+          </form>
+        </div>
+
+        <div class="testimonial-list" id="testimonial-list" aria-live="polite">
+          <p class="testimonial-empty">Noch keine Bewertungen vorhanden. Seien Sie die erste Person mit einem Feedback!</p>
+        </div>
       </div>
     </section>
   </main>
